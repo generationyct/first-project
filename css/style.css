@@ -46,23 +46,19 @@ html, body {
 .countries ul {
   display: flex;
   flex-direction: column;
-  width: 600px;
-}
-
-.country {
-  display: grid;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-bottom: 20px;
   width: 400px;
-  border: solid 1px black;
-  margin: 15px;
-  background-color: white;
 }
 
 .draggable-list {
+  width: 200px;
+  background-color: white;
   list-style-type: none;
 }
+
+.draggable-list li {
+  border-bottom: 1px solid black;
+}
+
 
 .flag img {
   height: 100px;
@@ -71,7 +67,7 @@ html, body {
 
 .flag {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
 }
 
 .draggable-list li.over .draggable {
@@ -135,4 +131,23 @@ html, body {
 .flag span {
   display: block;
   width: 600px;
+}
+
+.check-btn {
+  padding-bottom: 40px;
+  padding-top: 20px;
+  background-color: #fff;
+  border-radius: 4px 4px;
+  color: var(--text-color);
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.check-btn:active {
+  transform: scale(0.98);
+}
+
+.check-btn:focus {
+  outline: none;
 }

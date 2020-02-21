@@ -63,7 +63,7 @@ function createList() {
 
       listItem.innerHTML = `
 
-        <span class="flag"><img src="${countryByFlag[index]}"></span>
+        <div class="flag"><img src="${countryByFlag[index]}"></div>
         <div class="draggable" draggable="true">
         <p class="country-name">${country}</p>
         <i><img src="./img/icondraganddrop.png" ></i>
