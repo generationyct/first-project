@@ -8,18 +8,49 @@
 
 html, body {
   font-family:'Squada One', cursive;
+  background-image: url(/img/world-map.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-image: linear-gradient(120deg, #ff7044,  #ffbe33); */
+  opacity: .9;
+
 }
 
 .main {
   display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
-  grid-template-rows: 4rem 80vh auto;
+  grid-template-columns: 1fr 0.5fr 4fr 1fr;
+  grid-template-rows: 6rem 6rem 80vh auto;
 }
 
 #title {
-  grid-column-start: 2;
+  grid-column-start: 3;
+  grid-column-end: 4;
 }
 
 #title h1 {
-  margin-top: 20px;
+  margin-top: 40px;
+  font-size: 4rem;
+}
+
+#instructions-title h2 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  padding-top: 15px;
+}
+
+.countries {
+  grid-row-start: 3;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.country {
+  display: flex;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  width: 400px;
+  border: solid 1px black;
+  margin: 15px;
+  background-color: white;
 }
