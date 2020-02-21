@@ -1,5 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Squada+One&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html, body {
+  font-family:'Squada One', cursive;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 4rem 80vh auto;
+}
+
+#title {
+  grid-column-start: 2;
+}
+
+#title h1 {
+  margin-top: 20px;
 }
